@@ -51,6 +51,4 @@ The lab was designed to practice:
 
 The following screenshot shows the virtual machines used throughout this project.
 
-> **Screenshot:** Oracle VirtualBox Manager
-
-*(The VirtualBox screenshot will be added here after uploading it to the screenshots folder.)*
+![Oracle VirtualBox Lab](../screenshots/01-VirtualBox-Lab.png)
