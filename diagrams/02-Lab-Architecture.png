@@ -1,0 +1,13 @@
+                Host Computer
+                Windows 10
+                     │
+         Oracle VirtualBox 7.x
+                     │
+      ┌──────────────┴──────────────┐
+      │                             │
+┌───────────────┐          ┌────────────────┐
+│ Windows Server│          │ Windows 10 VM │
+│ AD-DC01       │          │ WIN-CLIENT     │
+│ AD DS         │          │ Joined Domain  │
+│ DNS           │          │ corp.local     │
+└───────────────┘          └────────────────┘
