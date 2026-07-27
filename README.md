@@ -1,86 +1,95 @@
 # Active Directory Home Lab
 
-## Project Overview
+## Overview
 
-This repository documents my hands-on Active Directory home lab, built to develop practical skills in Windows Server administration, identity management, and enterprise access control.
+This repository documents my hands-on Active Directory Home Lab built using Windows Server 2022 and Oracle VirtualBox.
 
-The lab was created using Oracle VirtualBox with Windows Server 2022 and Windows 10 Client virtual machines. Throughout this project, I focused on understanding how organizations manage users, groups, permissions, and Group Policies in real-world enterprise environments.
+The purpose of this project is to develop practical Identity and Access Management (IAM) and Windows enterprise administration skills through real-world Active Directory implementation and documentation.
+
+---
+
+## Project Objectives
+
+- Build an Active Directory Domain Controller
+- Configure DNS and Domain Services
+- Create Organizational Units (OUs)
+- Manage Users and Security Groups
+- Configure Group Policy Objects (GPOs)
+- Implement Delegation of Control
+- Practice the AGDLP permission model
+- Troubleshoot common Active Directory issues
+- Document the complete implementation
 
 ---
 
 ## Lab Environment
 
-* Windows Server 2022
-* Windows 10 Client
-* Oracle VirtualBox
-* Active Directory Domain Services (AD DS)
-* DNS
-* Group Policy Management
+| Component | Technology |
+|-----------|------------|
+| Hypervisor | Oracle VirtualBox |
+| Server OS | Windows Server 2022 |
+| Client OS | Windows 10 |
+| Directory Service | Active Directory Domain Services |
+| DNS | Microsoft DNS |
+| Documentation | GitHub + Markdown |
 
 ---
 
-## Skills Practiced
+## Documentation
 
-### Active Directory Fundamentals
-
-* Domain installation and configuration
-* Organizational Units (OUs)
-* User account management
-* Security Groups
-* Distribution Groups
-
-### Group Policy Management
-
-* Creating and linking GPOs
-* Computer vs User Configuration
-* `gpupdate /force`
-* LSDOU Processing
-* Security Filtering
-* GPO Inheritance
-* Block Inheritance
-* Enforced Policies
-* Loopback Processing
-* GPO Precedence
-* Group Policy Results
-* Group Policy Modeling
-
-### Identity & Access Management
-
-* Delegation of Control
-* Principle of Least Privilege (PoLP)
-* Role-Based Access Control (RBAC)
-* Security Groups vs Distribution Groups
-* Global Groups
-* Domain Local Groups
-* AGDLP Permission Model
+| Document | Description |
+|----------|-------------|
+| 01 | Lab Overview |
+| 02 | Lab Architecture |
+| 03 | Domain Controller Installation |
+| 04 | Active Directory Structure |
+| 05 | Group Policy Management |
+| 06 | Delegation of Control |
+| 07 | AGDLP Permission Model |
+| 08 | Troubleshooting |
+| 09 | Lessons Learned |
 
 ---
 
-## Key Learning Outcomes
+## Skills Demonstrated
 
-This lab helped me understand how enterprise organizations:
-
-* Manage user identities securely
-* Delegate administrative responsibilities without granting excessive privileges
-* Apply and troubleshoot Group Policies
-* Implement Role-Based Access Control (RBAC)
-* Design scalable permission models using AGDLP
+- Active Directory Administration
+- Windows Server Administration
+- DNS Configuration
+- Group Policy Management
+- Organizational Units
+- User Management
+- Security Groups
+- Delegation of Control
+- Principle of Least Privilege
+- AGDLP
+- Identity and Access Management
+- Troubleshooting
+- Technical Documentation
 
 ---
 
-## Future Enhancements
+## Repository Structure
 
-* Universal Groups
-* DNS Deep Dive
-* LDAP
-* Kerberos Authentication
-* NTLM Authentication
-* Hybrid Identity with Microsoft Entra ID
-* Conditional Access
-* Privileged Identity Management (PIM)
+```
+Active-Directory-Home-Lab
+│
+├── docs
+├── screenshots
+├── diagrams
+└── README.md
+```
 
 ---
 
 ## Career Goal
 
-I am building this home lab as part of my journey toward becoming a SOC Analyst and Identity & Access Management (IAM) professional through continuous hands-on learning and documentation.
+This project is part of my cybersecurity portfolio as I continue developing practical skills for SOC Analyst and Identity & Access Management (IAM) roles.
+
+---
+
+## Author
+
+**Faraz Kachelo**
+
+Cybersecurity | Active Directory | Identity & Access Management
