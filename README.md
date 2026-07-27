@@ -1,5 +1,12 @@
 # Active Directory Home Lab
 
+![Windows Server](https://img.shields.io/badge/Windows_Server-2022-blue)
+![Active Directory](https://img.shields.io/badge/Active_Directory-Lab-success)
+![VirtualBox](https://img.shields.io/badge/Oracle-VirtualBox-orange)
+![PowerShell](https://img.shields.io/badge/PowerShell-Administration-blue)
+![GitHub](https://img.shields.io/badge/Documentation-GitHub-black)
+![Markdown](https://img.shields.io/badge/Markdown-Documentation-lightgrey)
+
 ## Overview
 
 This repository documents my hands-on Active Directory Home Lab built using Windows Server 2022 and Oracle VirtualBox.
@@ -34,6 +41,18 @@ The purpose of this project is to develop practical Identity and Access Manageme
 | Documentation | GitHub + Markdown |
 
 ---
+
+## Key Technologies
+
+- Windows Server 2022
+- Active Directory Domain Services (AD DS)
+- Domain Name System (DNS)
+- Group Policy Management Console (GPMC)
+- Active Directory Users and Computers (ADUC)
+- Oracle VirtualBox
+- Windows 10
+- GitHub
+- Markdown
 
 ## Documentation
 
@@ -80,7 +99,31 @@ Active-Directory-Home-Lab
 └── README.md
 ```
 
+## What I Learned
+
+Through this project, I gained practical experience in:
+
+- Deploying and configuring an Active Directory Domain Controller
+- Managing users, Organizational Units (OUs), and Security Groups
+- Configuring and troubleshooting Group Policy Objects (GPOs)
+- Implementing Delegation of Control
+- Applying the AGDLP permission model
+- Troubleshooting Active Directory and DNS issues
+- Creating professional technical documentation using GitHub and Markdown
+
 ---
+
+## Future Improvements
+
+This repository will continue to evolve with additional enterprise scenarios, including:
+
+- Shared folder permission management
+- Roaming profiles
+- Folder redirection
+- Logon scripts
+- Advanced Group Policy configurations
+- Trust relationships
+- Integration with Microsoft Entra ID
 
 ## Career Goal
 
