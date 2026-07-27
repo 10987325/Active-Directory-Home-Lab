@@ -50,7 +50,8 @@ This improves security, simplifies administration, and supports enterprise-scale
 
 The following screenshot shows the Windows Server environment used to install and manage Active Directory.
 
-![Server Manager](../screenshots/02-Server-Manager.png)
+<img width="1024" height="768" alt="02-Server-Manager" src="https://github.com/user-attachments/assets/f538072d-d698-4bd9-b56d-6001c16adaed" />
+
 
 ---
 
