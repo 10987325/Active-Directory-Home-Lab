@@ -245,6 +245,157 @@ During this lab I learned:
 - Security Filtering allows policies to target specific users or security groups.
 - Proper GPO linking reduces administrative effort and improves policy management.
 
+- ---
+
+# Group Policy Processing and Troubleshooting
+
+## GPO Inheritance
+
+By default, Group Policy Objects linked at higher levels of Active Directory are inherited by lower levels.
+
+For example, if a policy is linked to the domain, child Organizational Units automatically inherit that policy unless inheritance is blocked.
+
+This inheritance model allows administrators to manage policies centrally while reducing administrative effort.
+
+---
+
+## Block Inheritance
+
+Block Inheritance prevents normally inherited Group Policies from applying to a specific Organizational Unit.
+
+This feature is useful when a department requires different settings from the rest of the organization.
+
+However, Block Inheritance does **not** prevent Enforced Group Policies from applying.
+
+---
+
+## Enforced Policies
+
+When a Group Policy Object is marked as **Enforced**, it takes precedence over conflicting policies applied at lower levels.
+
+Even if a child Organizational Unit blocks inheritance, an Enforced policy from a parent container is still applied.
+
+Example:
+
+A domain-wide password policy marked as Enforced will apply to every Organizational Unit, including those with Block Inheritance enabled.
+
+---
+
+## Loopback Processing
+
+Loopback Processing changes how User Configuration settings are applied.
+
+Normally, user settings follow the user account.
+
+With Loopback Processing enabled, user settings can instead follow the computer on which the user signs in.
+
+### Merge Mode
+
+Both User Configuration settings and Computer-based User settings are combined.
+
+If conflicts exist, the computer's settings take precedence.
+
+### Replace Mode
+
+Only the User Configuration settings assigned to the computer are applied.
+
+The user's normal User Configuration settings are ignored.
+
+---
+
+## Real-World Example
+
+Loopback Processing is commonly used in environments such as:
+
+- Computer laboratories
+- Library computers
+- Meeting rooms
+- Reception desks
+- Training centers
+
+Regardless of who signs in, those computers always receive the required user experience and restrictions.
+
+---
+
+## GPO Precedence (LSDOU)
+
+When multiple Group Policies configure the same setting, Windows determines which one wins using the LSDOU processing order.
+
+LSDOU stands for:
+
+- Local
+- Site
+- Domain
+- Organizational Unit
+
+Policies processed later take precedence over earlier policies unless an Enforced policy overrides them.
+
+---
+
+## Group Policy Troubleshooting
+
+Administrators use several tools to verify whether Group Policies are working correctly.
+
+### gpresult /r
+
+The `gpresult /r` command displays:
+
+- Applied Group Policies
+- Denied Group Policies
+- Reasons why policies were denied
+
+This is a fast command-line troubleshooting tool.
+
+---
+
+### Group Policy Results Wizard
+
+The Group Policy Results Wizard provides a graphical report showing:
+
+- Applied GPOs
+- Denied GPOs
+- Security Filtering
+- WMI Filtering
+- Processing errors
+
+This tool is useful when investigating policy application issues.
+
+---
+
+### Group Policy Modeling
+
+Group Policy Modeling simulates how policies would apply before deployment.
+
+It allows administrators to test different scenarios without changing production settings.
+
+This helps reduce configuration mistakes and improves deployment planning.
+
+---
+
+## Screenshot
+
+### Group Policy Results
+
+<img width="1024" height="768" alt="07-GPO-Results" src="https://github.com/user-attachments/assets/876d5054-e743-4633-8a79-37648679d07a" />
+
+---
+
+## Key Learning
+
+During this lab I learned:
+
+- How Group Policy inheritance works.
+- The difference between Block Inheritance and Enforced policies.
+- When Loopback Processing should be used.
+- How Windows resolves policy conflicts using LSDOU.
+- How to troubleshoot Group Policies using gpresult, Group Policy Results, and Group Policy Modeling.
+
+---
+
+## Enterprise Relevance
+
+Effective Group Policy management enables organizations to maintain security, standardize device configurations, and troubleshoot policy issues efficiently. These capabilities are essential in enterprise Windows environments where thousands of users and computers must be managed consistently.
+
 ---
 
 ## Enterprise Relevance
